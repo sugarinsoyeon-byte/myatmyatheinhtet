@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Subscriptions | Bean Boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="page-header">
+
+        <a href="index.html" class="page-logo">
+            Bean Boutique
+        </a>
+
+        <a href="offers.html" class="page-home">
+            Back to Offers
+        </a>
+
+    </header>
+
+
+    <main class="subscription-page">
+
+        <section class="subscription-intro">
+
+            <p class="section-label">
+                YOUR COFFEE, YOUR WAY
+            </p>
+
+            <h1>A Little Coffee, Delivered Regularly.</h1>
+
+            <p>
+                Make every morning special with a coffee subscription
+                tailored to your taste. Discover new flavours, enjoy
+                your favourite blends, and bring the café experience home.
+            </p>
+
+        </section>
+
+
+        <div class="subscription-plans">
+
+            <article class="subscription-card">
+
+                <p class="subscription-label">
+                    THE EVERYDAY CUP
+                </p>
+
+                <h2>Essential</h2>
+
+                <p class="subscription-description">
+                    A simple way to keep your coffee shelf stocked
+                    with a familiar favourite.
+                </p>
+
+                <p class="subscription-price">
+                    <strong>$12.00</strong>
+                    <span>/ month</span>
+                </p>
+
+                <ul>
+                    <li>One coffee bag per month</li>
+                    <li>Choose from selected house blends</li>
+                    <li>Monthly delivery</li>
+                </ul>
+
+                <a
+                    href="#subscription-form"
+                    class="subscription-button"
+                    data-plan="Essential"
+                >
+                    Choose This Plan
+                </a>
+
+            </article>
+
+
+            <article class="subscription-card subscription-featured">
+
+                <p class="subscription-label">
+                    THE COFFEE EXPLORER
+                </p>
+
+                <h2>Discovery</h2>
+
+                <p class="subscription-description">
+                    Explore different origins and tasting notes
+                    with a new coffee experience each month.
+                </p>
+
+                <p class="subscription-price">
+                    <strong>$22.00</strong>
+                    <span>/ month</span>
+                </p>
+
+                <ul>
+                    <li>Two coffee bags per month</li>
+                    <li>Rotating single-origin selections</li>
+                    <li>Monthly tasting notes</li>
+                </ul>
+
+                <a
+                    href="#subscription-form"
+                    class="subscription-button"
+                    data-plan="Discovery"
+                >
+                    Choose This Plan
+                </a>
+
+            </article>
+
+
+            <article class="subscription-card">
+
+                <p class="subscription-label">
+                    THE COFFEE LOVER
+                </p>
+
+                <h2>Connoisseur</h2>
+
+                <p class="subscription-description">
+                    Enjoy a wider selection of carefully chosen
+                    coffees for your daily brewing ritual.
+                </p>
+
+                <p class="subscription-price">
+                    <strong>$35.00</strong>
+                    <span>/ month</span>
+                </p>
+
+                <ul>
+                    <li>Three coffee bags per month</li>
+                    <li>Premium and seasonal selections</li>
+                    <li>Exclusive tasting notes</li>
+                </ul>
+
+                <a
+                    href="#subscription-form"
+                    class="subscription-button"
+                    data-plan="Connoisseur"
+                >
+                    Choose This Plan
+                </a>
+
+            </article>
+
+        </div>
+
+
+        <section
+            class="subscription-registration"
+            id="subscription-form"
+        >
+
+            <div class="subscription-form-intro">
+
+                <p class="section-label">
+                    LET'S GET BREWING
+                </p>
+
+                <h2>Start Your Subscription</h2>
+
+                <p>
+                    Choose your preferred plan and tell us a little
+                    about your coffee preferences.
+                </p>
+
+            </div>
+
+
+            <form
+                class="subscription-form"
+                id="subscription-registration-form"
+            >
+
+                <div class="form-group">
+
+                    <label for="sub-first-name">
+                        First Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="sub-first-name"
+                        name="firstName"
+                        placeholder="Enter your first name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="sub-last-name">
+                        Last Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="sub-last-name"
+                        name="lastName"
+                        placeholder="Enter your last name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="sub-email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="sub-email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="sub-plan">
+                        Choose Your Plan
+                    </label>
+
+                    <select
+                        id="sub-plan"
+                        name="plan"
+                        required
+                    >
+
+                        <option value="">
+                            Select a subscription plan
+                        </option>
+
+                        <option value="Essential">
+                            Essential
+                        </option>
+
+                        <option value="Discovery">
+                            Discovery
+                        </option>
+
+                        <option value="Connoisseur">
+                            Connoisseur
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="sub-coffee">
+                        Coffee Preference
+                    </label>
+
+                    <select
+                        id="sub-coffee"
+                        name="coffeePreference"
+                        required
+                    >
+
+                        <option value="">
+                            Choose your coffee preference
+                        </option>
+
+                        <option value="Whole Bean">
+                            Whole Bean
+                        </option>
+
+                        <option value="Ground Coffee">
+                            Ground Coffee
+                        </option>
+
+                        <option value="Surprise Me">
+                            Surprise Me
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="sub-frequency">
+                        Delivery Frequency
+                    </label>
+
+                    <select
+                        id="sub-frequency"
+                        name="frequency"
+                        required
+                    >
+
+                        <option value="">
+                            Choose delivery frequency
+                        </option>
+
+                        <option value="Monthly">
+                            Monthly
+                        </option>
+
+                        <option value="Every Two Weeks">
+                            Every Two Weeks
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="subscription-submit"
+                >
+                    Submit Subscription
+                </button>
+
+
+                <p
+                    id="subscription-message"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+    const planButtons = document.querySelectorAll(".subscription-button");
+    const planSelect = document.getElementById("sub-plan");
+    const subscriptionForm = document.getElementById(
+        "subscription-registration-form"
+    );
+    const message = document.getElementById("subscription-message");
+
+
+    planButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const selectedPlan = button.dataset.plan;
+
+            if (planSelect && selectedPlan) {
+                planSelect.value = selectedPlan;
+            }
+
+        });
+
+    });
+
+
+    if (subscriptionForm && planSelect && message) {
+
+        subscriptionForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const firstName =
+                document.getElementById("sub-first-name").value.trim();
+
+            const selectedPlan = planSelect.value;
+
+            message.textContent =
+                "Thank you, " + firstName +
+                "! Your " + selectedPlan +
+                " subscription request has been received. " +
+                "This is a demo confirmation; no payment has been processed.";
+
+            subscriptionForm.reset();
+
+        });
+
+    }
+
+});
+    </script>
+
+</body>
+</html>

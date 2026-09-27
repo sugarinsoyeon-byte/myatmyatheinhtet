@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events & Workshops | Bean Boutique</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer>
+    </script>
+
+</head>
+
+<body>
+
+    <header class="page-header">
+
+        <a href="index.html" class="page-logo">
+            Bean Boutique
+        </a>
+
+        <a href="index.html" class="page-home">
+            Home
+        </a>
+
+    </header>
+
+
+    <main class="events-page">
+
+        <section class="page-intro">
+
+            <p class="section-label">
+                COFFEE • COMMUNITY • CONNECTION
+            </p>
+
+            <h1>Events & Workshops</h1>
+
+            <p>
+                Discover the world of coffee through hands-on workshops,
+                tasting sessions, and special gatherings with fellow coffee lovers.
+            </p>
+
+        </section>
+
+
+        <div class="events-grid">
+
+            <article class="event-card">
+
+                <img
+                    src="IMG/coffeetasting.jpg"
+                    alt="Coffee tasting session with freshly brewed coffee"
+                >
+
+                <div class="event-info">
+
+                    <p class="event-type">
+                        TASTING EXPERIENCE
+                    </p>
+
+                    <h2>Coffee Tasting Session</h2>
+
+                    <p class="event-description">
+                        Explore the flavours and aromas of different coffee
+                        origins while learning how to identify tasting notes
+                        in every cup.
+                    </p>
+
+                    <div class="event-details">
+
+                        <p>
+                            <strong>Duration:</strong> 1 hour
+                        </p>
+
+                        <p>
+                            <strong>Level:</strong> All experience levels
+                        </p>
+
+                    </div>
+
+                    <a href="#registration" class="event-button">
+                        Register Now
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="event-card">
+
+                <img
+                    src="IMG/coffeemaking.jpg"
+                    alt="Coffee brewing workshop with brewing equipment"
+                >
+
+                <div class="event-info">
+
+                    <p class="event-type">
+                        HANDS-ON WORKSHOP
+                    </p>
+
+                    <h2>Home Brewing Workshop</h2>
+
+                    <p class="event-description">
+                        Learn how to brew better coffee at home using
+                        different techniques, from pour-over brewing
+                        to the French press.
+                    </p>
+
+                    <div class="event-details">
+
+                        <p>
+                            <strong>Duration:</strong> 2 hours
+                        </p>
+
+                        <p>
+                            <strong>Level:</strong> Beginner-friendly
+                        </p>
+
+                    </div>
+
+                    <a href="#registration" class="event-button">
+                        Register Now
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="event-card">
+
+                <img
+                    src="IMG/community.jpg"
+                    alt="Coffee community gathering at a cafe"
+                >
+
+                <div class="event-info">
+
+                    <p class="event-type">
+                        SPECIAL GATHERING
+                    </p>
+
+                    <h2>Meet the Roaster</h2>
+
+                    <p class="event-description">
+                        Discover how coffee beans are roasted and learn
+                        about the craft, techniques, and decisions behind
+                        every delicious cup.
+                    </p>
+
+                    <div class="event-details">
+
+                        <p>
+                            <strong>Duration:</strong> 1 hour
+                        </p>
+
+                        <p>
+                            <strong>Level:</strong> All experience levels
+                        </p>
+
+                    </div>
+
+                    <a href="#registration" class="event-button">
+                        Register Now
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <section class="registration-section" id="registration">
+
+            <div class="registration-intro">
+
+                <p class="section-label">
+                    SAVE YOUR SPOT
+                </p>
+
+                <h2>Join the Experience</h2>
+
+                <p>
+                    Interested in one of our events?
+                    Fill in the form below to register your interest.
+                </p>
+
+            </div>
+
+
+            <form class="registration-form" id="registration-form">
+
+                <div class="form-group">
+
+                    <label for="first-name">
+                        First Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="firstName"
+                        placeholder="Enter your first name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="last-name">
+                        Last Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="lastName"
+                        placeholder="Enter your last name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="event-choice">
+                        Choose an Event
+                    </label>
+
+                    <select
+                        id="event-choice"
+                        name="event"
+                        required
+                    >
+                        <option value="">
+                            Select an event
+                        </option>
+
+                        <option value="Coffee Tasting Session">
+                            Coffee Tasting Session
+                        </option>
+
+                        <option value="Home Brewing Workshop">
+                            Home Brewing Workshop
+                        </option>
+
+                        <option value="Meet the Roaster">
+                            Meet the Roaster
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="turnstile-container">
+
+                    <div
+                        class="cf-turnstile"
+                        data-sitekey="1x00000000000000000000AA"
+                        data-theme="light"
+                        data-size="flexible">
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="registration-button"
+                >
+                    Submit Registration
+                </button>
+
+                <p
+                    id="registration-message"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script>
+        const registrationForm = document.querySelector("#registration-form");
+const registrationMessage = document.querySelector("#registration-message");
+
+if (registrationForm && registrationMessage) {
+
+    registrationForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const firstName = document.querySelector("#first-name").value.trim();
+        const lastName = document.querySelector("#last-name").value.trim();
+        const email = document.querySelector("#email").value.trim();
+        const eventChoice = document.querySelector("#event-choice").value;
+
+        if (!firstName || !lastName || !email || !eventChoice) {
+
+            registrationMessage.textContent =
+                "Please complete all fields before submitting.";
+
+            return;
+        }
+
+        registrationMessage.textContent =
+            "Thank you, " + firstName +
+            "! Your interest in " + eventChoice +
+            " has been recorded in this demo.";
+
+        registrationForm.reset();
+    });
+
+}
+    </script>
+
+</body>
+</html>

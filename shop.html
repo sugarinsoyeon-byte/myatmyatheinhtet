@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | Bean Boutique</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="page-header">
+
+        <a href="index.html" class="page-logo">
+            Bean Boutique
+        </a>
+
+        <nav class="shop-header-links">
+            <a href="cart.html" class="page-cart">Go to Cart</a>
+            <a href="index.html" class="page-home">Home</a>
+        </nav>
+
+    </header>
+
+
+    <main class="shop-page">
+
+        <section class="page-intro">
+
+            <p class="section-label">
+                BRING THE CAFÉ HOME
+            </p>
+
+            <h1>
+                Shop Our Collection
+            </h1>
+
+            <p>
+                Bring the Bean Boutique experience home with our
+                carefully selected coffees and everyday café essentials.
+            </p>
+
+        </section>
+
+
+        <div class="shop-grid">
+
+
+            <!-- Product 1 -->
+
+            <article class="shop-card">
+
+                <img
+                    src="IMG/houser.jpg"
+                    alt="Bag of Bean Boutique House Roast whole coffee beans"
+                >
+
+                <div class="shop-info">
+
+                    <p class="product-type">
+                        COFFEE • WHOLE BEANS
+                    </p>
+
+                    <h2>
+                        House Roast
+                    </h2>
+
+                    <p class="product-description">
+                        A smooth everyday roast with balanced
+                        sweetness, toasted notes and a rich finish.
+                    </p>
+
+                    <p class="product-price">
+                        $14.00
+                    </p>
+
+                    <button
+                        class="add-to-cart"
+                        data-name="House Roast - Whole Beans"
+                        data-price="14.00"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 2 -->
+
+            <article class="shop-card">
+
+                <img
+                    src="IMG/velvet.jpg"
+                    alt="Bag of Bean Boutique Velvet Espresso whole coffee beans"
+                >
+
+                <div class="shop-info">
+
+                    <p class="product-type">
+                        COFFEE • WHOLE BEANS
+                    </p>
+
+                    <h2>
+                        Velvet Espresso
+                    </h2>
+
+                    <p class="product-description">
+                        Rich and silky with deep cocoa,
+                        caramel sweetness and a bold finish.
+                    </p>
+
+                    <p class="product-price">
+                        $15.00
+                    </p>
+
+                    <button
+                        class="add-to-cart"
+                        data-name="Velvet Espresso - Whole Beans"
+                        data-price="15.00"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 3 -->
+
+            <article class="shop-card">
+
+                <img
+                    src="IMG/golden.jpg"
+                    alt="Bag of Bean Boutique Golden Hour ground coffee"
+                >
+
+                <div class="shop-info">
+
+                    <p class="product-type">
+                        COFFEE • GROUND
+                    </p>
+
+                    <h2>
+                        Golden Hour
+                    </h2>
+
+                    <p class="product-description">
+                        A bright and lively coffee with honey sweetness,
+                        refreshing citrus and a clean finish.
+                    </p>
+
+                    <p class="product-price">
+                        $13.00
+                    </p>
+
+                    <button
+                        class="add-to-cart"
+                        data-name="Golden Hour - Ground Coffee"
+                        data-price="13.00"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 4 -->
+
+            <article class="shop-card">
+
+                <img
+                    src="IMG/mug1.jpg"
+                    alt="Bean Boutique ceramic coffee mug"
+                >
+
+                <div class="shop-info">
+
+                    <p class="product-type">
+                        MERCHANDISE
+                    </p>
+
+                    <h2>
+                        Bean Boutique Ceramic Mug
+                    </h2>
+
+                    <p class="product-description">
+                        A simple everyday mug designed for your
+                        favourite morning coffee at home.
+                    </p>
+
+                    <p class="product-price">
+                        $12.00
+                    </p>
+
+                    <button
+                        class="add-to-cart"
+                        data-name="Bean Boutique Ceramic Mug"
+                        data-price="12.00"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 5 -->
+
+            <article class="shop-card">
+
+                <img
+                    src="IMG/tote.jpg"
+                    alt="Reusable Bean Boutique coffee tumbler"
+                >
+
+                <div class="shop-info">
+
+                    <p class="product-type">
+                        MERCHANDISE
+                    </p>
+
+                    <h2>
+                        Reusable Coffee Tumbler
+                    </h2>
+
+                    <p class="product-description">
+                        A practical reusable tumbler for taking
+                        your coffee with you throughout the day.
+                    </p>
+
+                    <p class="product-price">
+                        $18.00
+                    </p>
+
+                    <button
+                        class="add-to-cart"
+                        data-name="Reusable Coffee Tumbler"
+                        data-price="18.00"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </main>
+
+
+    <script>
+    function getCart() {
+        return JSON.parse(localStorage.getItem("beanCart")) || [];
+    }
+
+    function saveCart(cart) {
+        localStorage.setItem("beanCart", JSON.stringify(cart));
+    }
+
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+    addToCartButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            const name = button.dataset.name;
+            const price = Number(button.dataset.price);
+            const cart = getCart();
+
+            const existingItem = cart.find(function (item) {
+                return item.name === name;
+            });
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    name: name,
+                    price: price,
+                    quantity: 1
+                });
+            }
+
+            saveCart(cart);
+
+            button.textContent = "Added to Cart!";
+
+            setTimeout(function () {
+                button.textContent = "Add to Cart";
+            }, 1000);
+        });
+    });
+</script>
+
+</body>
+
+</html>
